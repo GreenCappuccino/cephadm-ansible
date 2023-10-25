@@ -2,6 +2,9 @@ import datetime
 import time
 from typing import List, Dict
 
+from ansible.module_utils.basic import AnsibleModule  # type: ignore
+
+
 def retry(exceptions, retries=20, delay=1):
     def decorator(f):
         def _retry(*args, **kwargs):
