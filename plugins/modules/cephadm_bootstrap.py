@@ -17,7 +17,7 @@ from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
 from ansible.module_utils.basic import AnsibleModule  # type: ignore
-from ansible.module_utils.ceph_common import exit_module  # type: ignore
+from ansible_collections.ceph.cephadm.plugins.module_utils.ceph_common import exit_module  # type: ignore
 
 import datetime
 import os
